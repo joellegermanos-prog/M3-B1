@@ -1,0 +1,9 @@
+# M3-B1 — requirements (exploration et note d'identification, pas de code lourd)
+# Python 3.11+
+
+pandas==2.2.2
+numpy==1.26.4
+
+# Notebook
+jupyter==1.1.1
+ipykernel==6.29.5
