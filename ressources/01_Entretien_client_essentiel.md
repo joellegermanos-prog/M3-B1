@@ -50,7 +50,7 @@ de bricolage côté équipe technique.
   → *« Vous l'avez choisi pour quelle raison ? »* (pas *« oui c'est très
   bien »*).
 
-## Exemple de grille de questions
+## Exemple minimal — grille de questions
 
 À adapter selon le contexte. **8 à 12 questions**, pas plus — pour un
 entretien de 30 min, c'est suffisant.
@@ -124,7 +124,7 @@ posture consultant·e.
 ## Pour aller plus loin
 
 - **Erika Hall — *Just Enough Research*** : 2 chapitres sur l'interview
-  utilisateur — référence du métier UX, applicable IA. <https://rosenfeldmedia.com/books/just-enough-research/>
+  utilisateur — référence du métier UX, applicable IA. <https://www.mulebooks.com/just-enough-research>
 - **Steve Portigal — *Interviewing Users*** : encore plus pratique.
 - **CNIL — Guide RGPD pour les responsables de traitement** : utile pour
   formuler la question RGPD au client.

@@ -110,6 +110,23 @@ flowchart LR
     BDD --> MODEL
 ```
 
+## Ton schéma raconte le *data lineage*
+
+Ce que tu dessines a un nom métier : le **data lineage** (la traçabilité de la
+donnée, *source → exploitation*). C'est exactement l'item syllabus *« documenter
+le flux et la chaîne d'approvisionnement des données »*. Un bon schéma ne montre
+pas que des flèches — il **annote chaque source** avec son **cycle de vie** :
+
+| À annoter par source | Pourquoi c'est du lineage |
+|---|---|
+| **Provenance** (qui/quoi la produit) | savoir à qui réclamer une correction |
+| **Fraîcheur / fréquence** (temps réel, batch quotidien…) | savoir si la donnée est à jour au moment du scoring |
+| **Version** (schéma v1, export du JJ/MM) | reproductibilité : rejouer la pipeline sur le même état |
+| **Transformations subies** (nettoyage, dédup) | comprendre ce qui sépare la donnée brute de celle ingérée |
+
+> 💡 Tu n'as **pas** besoin d'un outil de lineage (OpenLineage, Marquez…) en
+> M3 — juste le **réflexe** d'annoter ces 4 infos. L'outillage, c'est plus tard.
+
 ## Pièges fréquents
 
 | Piège | Conséquence |

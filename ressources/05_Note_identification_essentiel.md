@@ -29,7 +29,13 @@ C'est l'exercice de **synthèse** central du brief — preuve C1 + C2 + CT5
 | **Compte-rendu de réunion** | Trace d'une discussion — pas un livrable autonome |
 | **Document Confluence / Notion** | Pour collaboration équipe — pas notre cible client externe |
 
-## Structure type (à reproduire dans `identification_sources.md`)
+## Concepts clés — la structure type d'une note d'identification
+
+> Les **6 sections** ci-dessous sont la colonne vertébrale à reproduire dans
+> `identification_sources.md`. Retiens surtout la **section 2** (distinguer
+> *demande dite* / *besoin réel*) : c'est ce qui sépare un junior d'un pro.
+
+### Structure type (à reproduire dans `identification_sources.md`)
 
 ### 1. Contexte (1 paragraphe)
 
@@ -104,6 +110,28 @@ C'est l'exercice de **synthèse** central du brief — preuve C1 + C2 + CT5
 - Pas d'analyse statistique fouillée des sources (M3-B1 = identification, pas EDA)
 - Pas d'AIPD juridique formelle (recommandation : escalader au DPO Acerox)
 - Pas d'évaluation de l'impact du capteur défaillant sur le modèle actuel
+
+## Exemple minimal — une note condensée
+
+Si tu manques de temps, voici la **version la plus courte qui reste utile**
+(à étoffer ensuite). Une demi-page de cette qualité vaut mieux que 3 pages floues :
+
+> **Contexte** — Acerox (PME métallurgie, 3 sites) veut enrichir son modèle
+> existant de prédiction de défauts.
+>
+> **Besoin réel** (≠ demande) — *dit* : « ajouter des sources » ; *réel* :
+> anticiper 24 h à l'avance les non-conformités de Roubaix L3.
+>
+> **Sources** —
+> | Source | Format | Pertinence | Risque RGPD |
+> |---|---|---|---|
+> | capteurs_iot.csv | CSV 51k/mois | Haute | Faible |
+> | erp_export.json | JSON 2k/mois | Haute | Moyen (`ouvrier_id`) |
+> | logs_machines.log | texte 30k/mois | Moyenne | Faible |
+>
+> **Reco** — ingérer capteurs + ERP (pseudonymiser `ouvrier_id`), reporter les logs.
+>
+> **À clarifier** — fréquence de réentraînement du modèle ? dictionnaire ERP ?
 
 ## Exercice guidé (tâche 5 du brief)
 

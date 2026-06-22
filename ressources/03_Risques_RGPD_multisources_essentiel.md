@@ -58,7 +58,7 @@ quelqu'un les exploite par accident.
   un risque et tu **proposes** une posture. Tu **ne décides pas** à la
   place du DPO client.
 
-## Exemple — Acerox
+## Exemple minimal — Acerox
 
 Sur les 3 sources Acerox :
 
@@ -117,8 +117,8 @@ remplis la colonne **« Risques RGPD »** avec :
 
 ## Pour aller plus loin
 
-- **CNIL — *L'anonymisation des données personnelles*** : <https://www.cnil.fr/fr/lanonymisation-des-donnees-personnelles>
-- **CNIL — *Quels sont les principes fondamentaux du RGPD ?*** : <https://www.cnil.fr/fr/principes-cles/comprendre-le-rgpd>
+- **CNIL — *L'anonymisation des données personnelles*** : <https://www.cnil.fr/fr/technologies/lanonymisation-de-donnees-personnelles>
+- **CNIL — *Quels sont les principes fondamentaux du RGPD ?*** : <https://www.cnil.fr/fr/comprendre-le-rgpd>
 - **AI Act européen** (synthèse) : <https://artificialintelligenceact.eu/the-act/>
 - **EDPB — Guidelines on Anonymisation Techniques** (anglais) : référence
   réglementaire européenne
