@@ -23,12 +23,15 @@ Ce que je comprends qu'il cherche vraiment : ...
 
 ## 3. Inventaire des sources
 
+> Une ligne par source que **vous** avez identifiée (fichiers reçus +
+> ce que vous découvrez en explorant les données). Le nom exact du fichier
+> fait partie de l'inventaire à dresser.
+
 | Source | Format | Volume | Fréquence | Qualité observée | Risques RGPD | Pertinence métier |
 |---|---|---|---|---|---|---|
-| `capteurs_iot.csv` | ... | ... | ... | ... | ... | ... |
-| `erp_export.json` | ... | ... | ... | ... | ... | ... |
-| `logs_machines.log` | ... | ... | ... | ... | ... | ... |
-| *bonus* PDFs | ... | ... | ... | ... | ... | ... |
+| *(ex. `nom_fichier.csv`)* | ... | ... | ... | ... | ... | ... |
+| ... | ... | ... | ... | ... | ... | ... |
+| ... | ... | ... | ... | ... | ... | ... |
 
 ## 4. Recommandations
 
