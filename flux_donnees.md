@@ -14,9 +14,9 @@
 flowchart LR
     %% TODO — Compléter avec tes 3 sources retenues + 1 bonus si traité
 
-    SRC1[📡 ?<br/>Format ?<br/>Volume ?<br/>Fréquence ?]
-    SRC2[📋 ?<br/>Format ?]
-    SRC3[📝 ?<br/>Format ?]
+    SRC1[📡 Capteurs IoT<br/>Format :CSV<br/>Volume : 51k lignes x çcolonnes<br/>Fréquence : continue]
+    SRC2[📋 ERP<br/>Format : JSON]
+    SRC3[📝 Logs machines<br/>Format : texte<br/>Volume : 30k lignes<br/>Fréquence : continue]
 
     INGEST[🔄 Ingestion<br/>à concevoir en M3-B2]
     BDD[(🗄️ BDD pivot<br/>SQLite)]

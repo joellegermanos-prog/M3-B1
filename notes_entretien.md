@@ -7,7 +7,7 @@
 >
 > Conservé en livrable du brief.
 
-**Date** : `<date>` — **Durée** : 30 min — **Présents** : Sébastien Marchand (chef de projet industrialisation Acerox) + `<prénom>` (FastIA)
+**Date** : `30/06/2026` — **Durée** : 30 min — **Présents** : Sébastien Marchand (chef de projet industrialisation Acerox) + `Joelle Germanos` (FastIA)
 
 ---
 
@@ -15,7 +15,8 @@
 
 > Quelle décision Sébastien veut-il améliorer ? Quel KPI métier ?
 
-**Dit** : ...
+**Dit** : Anticiper les defaut au moin 24h avant la production
+Taux d’anticipation des défauts
 
 **Interprété** : ...
 
@@ -23,7 +24,7 @@
 
 > Qu'a-t-il à disposition ? Où ? Sous quel format ?
 
-**Dit** : ...
+**Dit** : fichier csv, texte brut
 
 **Interprété** : ...
 
@@ -40,7 +41,7 @@
 > Quelles obligations légales ? Qui possède les données ? Quels accès
 > sécurisés ?
 
-**Dit** : ...
+**Dit** : Données sont local, Souveraineté
 
 **Interprété** : ...
 
@@ -48,7 +49,7 @@
 
 > Comment Sébastien saura-t-il qu'on a réussi ?
 
-**Dit** : ...
+**Dit** : Baisse de – 20% sur la ligne de roubais
 
 **Interprété** : ...
 
@@ -58,8 +59,9 @@
 
 > Notes-le honnêtement — c'est précieux pour la note d'identification.
 
-- ...
-- ...
+- Contraintes IT , sécurité, et conformité
+- Les données capteurs sont-elles disponibles au moins 24h avant la production, ou uniquement pendant la production ?
+- Le champ ouvrier_id est-il nécessaire pour la prédiction, ou peut-on l’exclure pour réduire les risques RGPD ?
 
 ## Mes impressions à chaud (10 min après)
 
