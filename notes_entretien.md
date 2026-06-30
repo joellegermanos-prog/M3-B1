@@ -18,7 +18,7 @@
 **Dit** : Anticiper les defaut au moin 24h avant la production
 Taux d’anticipation des défauts
 
-**Interprété** : ...
+**Interprété** : Améliorer la capacité à détecter en amont les situations à risque afin d’ajuster la production (paramètres machine, maintenance, contrôle qualité) avant lancement. 
 
 ## 2. Sources et formats
 
@@ -26,13 +26,13 @@ Taux d’anticipation des défauts
 
 **Dit** : fichier csv, texte brut
 
-**Interprété** : ...
+**Interprété** : Présence de plusieurs sources hétérogènes
 
 ## 3. Volumétrie et fréquence
 
 > Combien de données ? À quelle cadence arrivent-elles ?
 
-**Dit** : ...
+**Dit** : N/A
 
 **Interprété** : ...
 
@@ -43,7 +43,7 @@ Taux d’anticipation des défauts
 
 **Dit** : Données sont local, Souveraineté
 
-**Interprété** : ...
+**Interprété** : Les données sont hébergées en local, ce qui traduit une contrainte forte de souveraineté et probablement une volonté de limiter l’exposition à des infrastructures cloud externes.  
 
 ## 5. Critères de succès
 
@@ -51,7 +51,7 @@ Taux d’anticipation des défauts
 
 **Dit** : Baisse de – 20% sur la ligne de roubais
 
-**Interprété** : ...
+**Interprété** : L’objectif principal est une amélioration mesurable de la performance industrielle, avec une réduction significative des défauts qualité sur une ligne critique (Roubaix). 
 
 ---
 
@@ -60,15 +60,14 @@ Taux d’anticipation des défauts
 > Notes-le honnêtement — c'est précieux pour la note d'identification.
 
 - Contraintes IT , sécurité, et conformité
-- Les données capteurs sont-elles disponibles au moins 24h avant la production, ou uniquement pendant la production ?
-- Le champ ouvrier_id est-il nécessaire pour la prédiction, ou peut-on l’exclure pour réduire les risques RGPD ?
+- Combien de données ? À quelle cadence arrivent-elles ?
 
 ## Mes impressions à chaud (10 min après)
 
 > 1 paragraphe, à toi.
 
-...
+Sébastien exprime un besoin métier clair centré sur la réduction des défauts qualité et leur anticipation en amont, mais avec une formulation encore floue sur les aspects data et techniques. L’enjeu principal sera de structurer cette demande en un cas d’usage exploitable, notamment en validant la disponibilité des donnée
 
 ---
 
-*Notes d'entretien produites par <prénom>, <date>.*
+*Notes d'entretien produites par <Joelle>, <30/06/2026>.*
