@@ -66,7 +66,7 @@ Taux d’anticipation des défauts
 
 > 1 paragraphe, à toi.
 
-Sébastien exprime un besoin métier clair centré sur la réduction des défauts qualité et leur anticipation en amont, mais avec une formulation encore floue sur les aspects data et techniques. L’enjeu principal sera de structurer cette demande en un cas d’usage exploitable, notamment en validant la disponibilité des donnée
+Sébastien exprime un besoin métier clair centré sur la réduction des défauts qualité et leur anticipation en amont, mais avec une formulation encore floue sur les aspects data et techniques. L’enjeu principal sera de structurer cette demande en un cas d’usage exploitable, notamment en validant la disponibilité des données.
 
 ---
 
