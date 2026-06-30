@@ -27,14 +27,12 @@ Ce que je comprends qu'il cherche vraiment : Améliorer la prise de décision en
 > ce que vous découvrez en explorant les données). Le nom exact du fichier
 > fait partie de l'inventaire à dresser.
 
+
 | Source | Format | Volume | Fréquence | Qualité observée | Risques RGPD | Pertinence métier |
 |---|---|---|---|---|---|---|
-| *(ex. `nom_fichier.csv`)* | ... | ... | ... | ... | ... | ... |
-| Source | Format | Volume | Fréquence | Qualité observée | Risques RGPD | Pertinence métier |
-|---|---|---|---|---|---|---|
-| `capteurs_iot.csv` | CSV structuré | 51 000 lignes × 7 colonnes (~2,7 MB) | continue (1 mois échantillonné) | Données globalement propres ; ~1,47 % de valeurs manquantes sur `vibration_mms` | Faible (pas de données perso) | Haute  — mesures directes des conditions de production (température, vibration, débit) utiles pour détecter les défauts |
-| `erp_export.json` | JSON structuré | 2 000 lignes × 9 colonnes (~140 KB) | Batch (export ERP périodique, à clarifier) | Structure cohérente ; ~5,45 % de valeurs manquantes sur `ouvrier_id` ; dates en texte à convertir | Moyen à élevé — `ouvrier_id` pseudonymisé, risque de réidentification par croisement avec logs, planning ou données IoT | Très élevée — contexte des ordres de production (produit, ligne, dates) essentiel pour anticiper les défauts |
-| `logs_machines.log` | Texte semi-structuré | 30 000 lignes (~1,8 MB) | Continue (logs machines) | Format régulier mais non structuré ; parsing nécessaire ; événements INFO/WARN/ERROR exploitables ; messages techniques pertinents | Moyen — événements type `operator_login`, `shift_changed` peuvent permettre une réidentification indirecte via croisement | Moyenne à élevée — utile pour expliquer et confirmer les anomalies détectées par les capteurs (ex. vibration_overlimit) |
+| `capteurs_iot.csv` | CSV  | 51 000 lignes × 7 colonnes (~3,5 MB) | continue (1 mois échantillonné) | ~1,47 % de valeurs manquantes sur `vibration_mms` | Faible (pas de données personnelles) | Haute  — mesures directes des conditions de production (température, vibration, débit) utiles pour détecter les défauts |
+| `erp_export.json` | JSON | 2 000 lignes × 9 colonnes (~546 KB) | Batch (export ERP périodique) | Structure cohérente ; ~5,45 % de valeurs manquantes sur `ouvrier_id` ; dates en texte à convertir | Moyen — `ouvrier_id` pseudonymisé, risque de réidentification par croisement avec logs, planning ou données IoT | Haute — contexte des ordres de production (produit, ligne, dates) essentiel pour anticiper les défauts |
+| `logs_machines.log` | Texte semi-structuré | 30 000 lignes (~1,8 MB) | Continue (logs machines) | Format régulier mais non structuré ; parsing nécessaire ; événements INFO/WARN/ERROR exploitables ; messages techniques pertinents | Moyen — événements type `operator_login`, `shift_changed` peuvent permettre une réidentification indirecte via croisement | Moyenne — utile pour expliquer et confirmer les anomalies détectées par les capteurs |
 
 ## 4. Recommandations
 
