@@ -10,7 +10,7 @@
 > 1 paragraphe — qui est Acerox ? quel est leur existant ? quelle est la
 > demande FastIA ?
 
-Acerox Métallurgie est un acteur industriel disposant de plusieurs sites de production et d’un modèle existant de prédiction des défauts qualité. L’objectif de la mission est d’identifier de nouvelles sources de données susceptibles d’enrichir ce modèle. FastIA intervient pour cadrer le besoin métier, analyser les données disponibles (capteurs IoT, ERP, logs machines).
+Acerox Métallurgie est un acteur industriel disposant de plusieurs sites de production et d’un modèle existant de prédiction des défauts qualité. L’objectif de la mission est d’identifier de nouvelles sources de données susceptibles d’enrichir ce modèle. FastIA intervient pour cadrer le besoin métier, analyser les données disponibles.
 
 ## 2. Demande métier reformulée
 
@@ -39,9 +39,22 @@ Ce que je comprends qu'il cherche vraiment : Améliorer la prise de décision en
 > 3-5 puces. Quelles sources ingérer en priorité ? Lesquelles écarter et
 > pourquoi ?
 
-- ...
-- ...
-- ...
+
+- **Prioriser l’ingestion des capteurs IoT** :  
+  source clé pour capturer les conditions physiques de production (température, vibration, débit) et détecter les signaux faibles annonciateurs de défauts.
+
+- **Intégrer en priorité les données ERP** :  
+  indispensables pour contextualiser les données techniques (produit, ligne, dates) et permettre une analyse orientée métier, notamment pour anticiper les défauts avant production.
+
+- **Intégrer les logs machines en complément** :  
+  utiles pour expliquer et confirmer les anomalies détectées (ex. vibration_overlimit), mais nécessitant un effort de parsing et de structuration préalable.
+
+- **Encadrer les données sensibles (RGPD)** :  
+  pseudonymiser ou supprimer le champ `ouvrier_id` et limiter l’usage des événements opérateurs afin de réduire les risques de réidentification par croisement.
+
+- **Mettre en place un alignement temporel des données** :  
+  synchroniser IoT, ERP et logs autour du timestamp pour garantir une exploitation cohérente et répondre à l’objectif d’anticipatio
+
 
 ## 5. Points à clarifier avec Sébastien
 
@@ -59,7 +72,8 @@ Ce que je comprends qu'il cherche vraiment : Améliorer la prise de décision en
 - Pas d'analyse statistique fouillée des sources (M3-B1 = identification,
   pas EDA complète)
 - Pas d'AIPD juridique formelle (recommandation : escalader au DPO Acerox)
-- ...
+- Pas de conception ni d’évaluation du modèle existant (hors périmètre, modèle déjà en place chez Acerox).
+- Pas de mise en œuvre technique (ingestion, pipeline, BDD)
 
 ---
 
