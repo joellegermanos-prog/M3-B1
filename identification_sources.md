@@ -10,16 +10,16 @@
 > 1 paragraphe — qui est Acerox ? quel est leur existant ? quelle est la
 > demande FastIA ?
 
-...
+Acerox Métallurgie est un acteur industriel disposant de plusieurs sites de production et d’un modèle existant de prédiction des défauts qualité. L’objectif de la mission est d’identifier de nouvelles sources de données susceptibles d’enrichir ce modèle. FastIA intervient pour cadrer le besoin métier, analyser les données disponibles (capteurs IoT, ERP, logs machines).
 
 ## 2. Demande métier reformulée
 
 > 1 paragraphe — ce que Sébastien veut **vraiment**, distingué de ce qu'il
 > a *dit*. Reformulation en termes de décision métier à améliorer.
 
-Ce que Sébastien a demandé : ...
+Ce que Sébastien a demandé : Enrichir le modèle existant avec de nouvelles données pour anticiper les défauts qualité au moins 24h avant la production
 
-Ce que je comprends qu'il cherche vraiment : ...
+Ce que je comprends qu'il cherche vraiment : Améliorer la prise de décision en amont de la production en identifiant les situations à risque suffisamment tôt pour ajuster les paramètres de fabrication, planifier des actions préventives et réduire les défauts. L’objectif est d’optimiser la qualité de production et de diminuer les rebuts, notamment sur des lignes sensibles comme celle de Roubaix.
 
 ## 3. Inventaire des sources
 
@@ -30,8 +30,11 @@ Ce que je comprends qu'il cherche vraiment : ...
 | Source | Format | Volume | Fréquence | Qualité observée | Risques RGPD | Pertinence métier |
 |---|---|---|---|---|---|---|
 | *(ex. `nom_fichier.csv`)* | ... | ... | ... | ... | ... | ... |
-| ... | ... | ... | ... | ... | ... | ... |
-| ... | ... | ... | ... | ... | ... | ... |
+| Source | Format | Volume | Fréquence | Qualité observée | Risques RGPD | Pertinence métier |
+|---|---|---|---|---|---|---|
+| `capteurs_iot.csv` | CSV structuré | 51 000 lignes × 7 colonnes (~2,7 MB) | continue (1 mois échantillonné) | Données globalement propres ; ~1,47 % de valeurs manquantes sur `vibration_mms` | Faible (pas de données perso) | Haute  — mesures directes des conditions de production (température, vibration, débit) utiles pour détecter les défauts |
+| `erp_export.json` | JSON structuré | 2 000 lignes × 9 colonnes (~140 KB) | Batch (export ERP périodique, à clarifier) | Structure cohérente ; ~5,45 % de valeurs manquantes sur `ouvrier_id` ; dates en texte à convertir | Moyen à élevé — `ouvrier_id` pseudonymisé, risque de réidentification par croisement avec logs, planning ou données IoT | Très élevée — contexte des ordres de production (produit, ligne, dates) essentiel pour anticiper les défauts |
+| `logs_machines.log` | Texte semi-structuré | 30 000 lignes (~1,8 MB) | Continue (logs machines) | Format régulier mais non structuré ; parsing nécessaire ; événements INFO/WARN/ERROR exploitables ; messages techniques pertinents | Moyen — événements type `operator_login`, `shift_changed` peuvent permettre une réidentification indirecte via croisement | Moyenne à élevée — utile pour expliquer et confirmer les anomalies détectées par les capteurs (ex. vibration_overlimit) |
 
 ## 4. Recommandations
 
