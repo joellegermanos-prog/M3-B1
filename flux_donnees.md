@@ -49,8 +49,8 @@ flowchart LR
   - `capteurs_iot.csv` : données techniques essentielles pour détecter les dérives machines.
   - `erp_export.json` : contexte des ordres de fabrication, indispensable pour relier défauts et production.
 
-- Source(s) écartées : Aucune source écartée à ce stade.
-- Source bonus (PDF) traitée ? oui / non, pourquoi : Non, pertinente uniquement pour de la recherche sémantique (RAG) en aide au diagnostic, pas pour la prédiction tabulaire.
+- Source(s) écartées : les logs machines.
+- Source bonus (PDF) traitée ? :  non, source non fournie.
 
 ---
 
