@@ -3,7 +3,7 @@
 > Document remis à **Sébastien Marchand** (chef de projet industrialisation
 > Acerox). **2-3 pages max.** Public : décideur métier non-technique —
 > langage courant, pas de jargon scikit-learn ou SQL.
-> Auteur : `<prénom>` — Date : `<date>`
+> Auteur : `<Joelle>` — Date : `<30/06/2026>`
 
 ## 1. Contexte
 
@@ -43,17 +43,11 @@ Ce que je comprends qu'il cherche vraiment : Améliorer la prise de décision en
 - **Prioriser l’ingestion des capteurs IoT** :  
   source clé pour capturer les conditions physiques de production (température, vibration, débit) et détecter les signaux faibles annonciateurs de défauts.
 
-- **Intégrer en priorité les données ERP** :  
+- **Prioriser les données ERP** :  
   indispensables pour contextualiser les données techniques (produit, ligne, dates) et permettre une analyse orientée métier, notamment pour anticiper les défauts avant production.
 
-- **Intégrer les logs machines en complément** :  
-  utiles pour expliquer et confirmer les anomalies détectées (ex. vibration_overlimit), mais nécessitant un effort de parsing et de structuration préalable.
-
-- **Encadrer les données sensibles (RGPD)** :  
-  pseudonymiser ou supprimer le champ `ouvrier_id` et limiter l’usage des événements opérateurs afin de réduire les risques de réidentification par croisement.
-
-- **Mettre en place un alignement temporel des données** :  
-  synchroniser IoT, ERP et logs autour du timestamp pour garantir une exploitation cohérente et répondre à l’objectif d’anticipatio
+- **Sources qui peuvent etre écartés: les logs machines** :  
+  utiles pour expliquer et confirmer les anomalies détectées, mais nécessitant un effort de parsing et de structuration préalable.
 
 
 ## 5. Points à clarifier avec Sébastien
@@ -61,9 +55,9 @@ Ce que je comprends qu'il cherche vraiment : Améliorer la prise de décision en
 > 3-5 questions ouvertes restantes — preuve de lucidité sur ce qu'on ne
 > sait pas encore.
 
-1. ...
-2. ...
-3. ...
+1. Les information operator_login et shift_changed dans les logs peuvent-ils être exploités?
+2. Existe-t-il une source de donnée qui relie les données captuers IoT et ERP?
+
 
 ## 6. Limites de cette note
 
@@ -75,6 +69,8 @@ Ce que je comprends qu'il cherche vraiment : Améliorer la prise de décision en
 - Pas de conception ni d’évaluation du modèle existant (hors périmètre, modèle déjà en place chez Acerox).
 - Pas de mise en œuvre technique (ingestion, pipeline, BDD)
 
+
+
 ---
 
-*Note produite par <prénom>, <date>, dans le cadre du brief M3-B1 ATOS.*
+*Note produite par <joelle>, <30/06/2026>, dans le cadre du brief M3-B1 ATOS.*
