@@ -33,6 +33,16 @@ Si ces 4 commandes marchent, ton poste est prêt.
 
 ---
 
+### Sources analysées
+| Source | Format | Intérêt métier |
+|----------|----------|----------|
+| Capteurs IoT | CSV | Variables de production en temps réel |
+| ERP | JSON | Données de fabrication et opérateurs |
+| Logs machines | LOG | Événements techniques et anomalies |
+
+
+---
+
 ## 📁 Structure du repo
 
 ```
